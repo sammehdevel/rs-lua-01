@@ -15,5 +15,9 @@ path = "src/lua-02-syntax.rs"
 name = "lua-03-require"
 path = "src/lua-03-require.rs"
 
+[[bin]]
+name = "lua-04-tables"
+path = "src/lua-04-tables.rs"
+
 [dependencies]
 mlua = { version = "0.11", features = ["lua54", "vendored"] }
