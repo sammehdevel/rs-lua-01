@@ -22,8 +22,26 @@ for i = 1,10 do a[i] = i end
 print(a[10])
 
 -- print the table
+print("print a table")
 a = {}
 for i = 1,10 do a[i] = i end
 for i,line in ipairs(a) do
+    print(i.. "," ..line)
+end
+-- Another way to iterate a table
+local i = 1
+while a[i] do
+    print(i .. ","..a[i])
+    i = i + 1
+end
+
+-- Initialize a table
+print("initialize a table")
+a = {1,2,3,4,5,6,7,8,9,10}
+for i,line in ipairs(a) do
+    print(i.. "," ..line)
+end
+b = {x=1, y=1, ["z"]=2}
+for i,line in pairs(b) do -- Use "pairs" not "ipairs" here
     print(i.. "," ..line)
 end
